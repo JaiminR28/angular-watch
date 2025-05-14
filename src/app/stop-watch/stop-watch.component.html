@@ -1,0 +1,16 @@
+<div class="main-container">
+    <div style="display: flex; flex-direction: column;">
+    <div class="watch-container">
+        <h3>{{hours()}} : </h3>
+        <h3> {{minutes()}} : </h3>
+        <h3> {{seconds()}} :</h3>
+        <h3> {{miliseconds()}}</h3>
+    </div>
+
+    <div>
+        <button (click)="toggleActiveStopWatch(true)" *ngIf="active" else elseBlock>Start</button>
+        <ng-template #elseBlock><button >Stop</button></ng-template>
+        <button (click)="resetStopWatch()">Reset</button>
+    </div>
+    </div>
+</div>

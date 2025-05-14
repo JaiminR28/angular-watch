@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-options-parent {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    list-style-type: none;
+}
